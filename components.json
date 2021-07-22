@@ -2,53 +2,63 @@
   "components": [
     {
       "code": "report",
-      "component_identifier": "product",
-      "children":[
+      "label": "Report",
+      "children": [
         {
-          "code": "dashboard",
-          "component_identifier": "subproduct",
-          "children": [
+          "code": "dropdown",
+          "component_identifier": "dropdown",
+          "data": [
             {
-              "code": "form",
-              "component_identifier": "form",
-              "children": [
-                {
-                  "code": "dropdown",
-                  "component_identifier": "dropdown",
-                  "data": [
-                    {
-                      "id": "paris",
-                      "label": "Paris"
-                    },
-                    {
-                      "id": "grenoble",
-                      "label": "Grenoble"
-                    },
-                    {
-                      "id": "lyon",
-                      "label": "Lyon"
-                    },
-                    {
-                      "id": "geneve",
-                      "label": "Geneve"
-                    },
-                    {
-                      "id": "marseille",
-                      "label": "Marseille"
-                    }
-
-                  ]
-                },
-                {
-                  "code": "search",
-                  "component_identifier": "search"
-                }
-
-              ]
+              "id": "paris",
+              "label": "Paris"
             },
             {
-              "code": "table",
-              "component_identifier": "table"
+              "id": "grenoble",
+              "label": "Grenoble"
+            },
+            {
+              "id": "lyon",
+              "label": "Lyon"
+            },
+            {
+              "id": "geneve",
+              "label": "Geneve"
+            },
+            {
+              "id": "marseille",
+              "label": "Marseille"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "benchmark",
+      "label": "Benchmark",
+      "children": [
+        {
+          "code": "benchmark_dropdown",
+          "component_identifier": "dropdown",
+          "data": [
+            {
+              "id": "new-york",
+              "label": "New York"
+            },
+            {
+              "id": "berlin",
+              "label": "Berlin"
+            },
+            {
+              "id": "los-angeles",
+              "label": "Los Angeles"
+            },
+            {
+              "id": "amsterdam",
+              "label": "Amsterdam"
+            },
+            {
+              "id": "singapour",
+              "label": "Singapour"
             }
           ]
         }
