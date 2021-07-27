@@ -1,10 +1,13 @@
 var express = require("express");
+var cors = require("cors");
 var app = express();
 var morgan = require("morgan");
 
 var components = require("./components.json");
 var users = require("./users.json");
 app.use(morgan("dev"));
+
+app.use(cors());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
